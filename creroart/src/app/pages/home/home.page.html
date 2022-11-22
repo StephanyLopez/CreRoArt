@@ -1,0 +1,25 @@
+<!--<app-header titulo="Pagina 1"></app-header>-->
+
+<ion-content>
+  <ion-slides fullscreen class="ion-padding" scroll-y="false" pager>
+    <ion-slide class="slides">
+      <div class="slide" (scroll)="false">
+          <ion-img src="assets/img/rex.png"></ion-img>
+          <h2>Bienvenido</h2>
+          <p>
+              Nuestra aplicación llamada <b>Cre-RoArt</b> fue desarrollada con el fin de poder ofrecer de la forma más rápida y sencilla nuestros servicios 
+              para que esté al alcance de su mano.
+          </p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slide">
+          <ion-img src="assets/img/huella.png"></ion-img>
+          <h2>¿Listo para comenzar?</h2>
+          <ion-button fill="clear" routerLink="/inicio">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

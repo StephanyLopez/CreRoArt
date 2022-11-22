@@ -1,0 +1,7 @@
+{
+  "name": "creroart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

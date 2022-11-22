@@ -1,0 +1,20 @@
+<ion-header [translucent]="true" collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large" class="titulo">
+      Cre-RoArt
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="auth-form" scrollY="false">
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button routerLink="/register" expand="block" color="success">Register</ion-button>
+        <span class="divider line one-line">or</span>
+        <span class="already">Already a user?</span>
+        <ion-button routerLink="/login" expand="block" color="dark">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
