@@ -8,7 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'bien',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -29,6 +29,18 @@ const routes: Routes = [
   {
     path: 'bien',
     loadChildren: () => import('./pages/bien/bien.module').then( m => m.BienPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'map',
+    loadChildren: () => import('./pages/map/map.module').then( m => m.MapPageModule)
+  },
+  {
+    path: 'marcas',
+    loadChildren: () => import('./pages/marcas/marcas.module').then( m => m.MarcasPageModule)
   },
 ];
 

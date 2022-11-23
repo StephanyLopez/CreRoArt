@@ -7,6 +7,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+
 //firebase
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainComponent } from './components/main/main.component';

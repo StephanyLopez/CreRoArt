@@ -1,0 +1,209 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toohed" color="dark">
+    <ion-segment [(ngModel)]="segment" scrollable >
+      <ion-segment-button value="creroart">
+        Cre-RoArt
+      </ion-segment-button>
+      <ion-segment-button value="applerex">
+        Apple-Rex
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!--Contenido que va a aparecer-->
+  <div [ngSwitch]="segment">
+    <ion-card *ngSwitchCase="'creroart'">
+      <ion-img src="assets/img/creroart/arreglos.jpg"></ion-img>
+      <ion-card-header>
+        Arreglos Florales
+      </ion-card-header>
+      <ion-card-content>
+        First Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'creroart'">
+      <ion-img src="assets/img/creroart/cuadros.jpg"></ion-img>
+      <ion-card-header>
+        Cuadros
+      </ion-card-header>
+      <ion-card-content>
+        First Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'creroart'">
+      <ion-img src="assets/img/creroart/dulceros.jpg"></ion-img>
+      <ion-card-header>
+        Dulceros & CajaSorpresa
+      </ion-card-header>
+      <ion-card-content>
+        First Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'creroart'">
+      <ion-img src="assets/img/creroart/fundas.jpg"></ion-img>
+      <ion-card-header>
+        Fundas
+      </ion-card-header>
+      <ion-card-content>
+        First Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'creroart'">
+      <ion-img src="assets/img/creroart/piñatas.jpg"></ion-img>
+      <ion-card-header>
+        Piñatas
+      </ion-card-header>
+      <ion-card-content>
+        First Content here
+      </ion-card-content>
+    </ion-card>
+
+    <!--Primera Parte-->
+    <ion-card *ngSwitchCase="'second'">
+      <ion-card-header>
+        BIENVENIDO
+      </ion-card-header>
+      <ion-card-content>
+        Conoce Nuestras Marcas y Productos
+      </ion-card-content>
+    </ion-card>
+
+    <!--AppleRex-->
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/tacos.jpg"></ion-img>
+      <ion-card-header>
+        Tacos Locos
+      </ion-card-header>
+      <ion-card-content>
+        $45.00
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/paleta.jpg"></ion-img>
+      <ion-card-header>
+        Paleta Picamoy
+      </ion-card-header>
+      <ion-card-content>
+        Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/gomitas.jpg"></ion-img>
+      <ion-card-header>
+        Gomitas Locas
+      </ion-card-header>
+      <ion-card-content>
+        $35.00
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/tostilocos.jpg"></ion-img>
+      <ion-card-header>
+        Tostilocos
+      </ion-card-header>
+      <ion-card-content>
+        Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/manzanapalo.jpg"></ion-img>
+      <ion-card-header>
+        Manzana en Palo
+      </ion-card-header>
+      <ion-card-content>
+        Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/pepinoslocos.jpg"></ion-img>
+      <ion-card-header>
+        Pepinos Locos
+      </ion-card-header>
+      <ion-card-content>
+        $40.00
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/manzanas.jpg"></ion-img>
+      <ion-card-header>
+        Manzana Loca
+      </ion-card-header>
+      <ion-card-content>
+        Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/mangoloco.jpg"></ion-img>
+      <ion-card-header>
+        Mangos Locos
+      </ion-card-header>
+      <ion-card-content>
+        $80.00
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/manzanacaramelo.jpg"></ion-img>
+      <ion-card-header>
+        Manzana con Caranelo
+      </ion-card-header>
+      <ion-card-content>
+        Content here
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'applerex'">
+      <ion-img src="assets/img/applerex/pepisup.jpg"></ion-img>
+      <ion-card-header>
+        Pepinos Locos Supremos
+      </ion-card-header>
+      <ion-card-content>
+        $80.00
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-tabs>
+      <ion-tab-bar color="dark" slot="bottom">
+
+        <ion-tab-button routerLink="/bien">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button routerLink="/map" tab="map">
+          <ion-icon name="map"></ion-icon>
+          <ion-label>Map</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon color="primary" name="grid"></ion-icon>
+          <ion-label>Productos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil" tab="speakers">
+          <ion-icon name="person-circle"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

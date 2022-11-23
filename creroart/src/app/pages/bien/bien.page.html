@@ -1,10 +1,126 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>bien</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <h1>Página principal</h1>
-  <button (click)="onClick()" class="btn btn-outline-danger mt-5">Logout</button>
+  <!--Saludo-->
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <b><h1>HOLA</h1></b>
+        <button (click)="onClick()" class="btn btn-outline-danger mt-5">Logout</button>
+      </ion-col>
+      <ion-col>
+        <!--Item-->
+        <ion-item color="transparent" class="item" lines="none">
+          <ion-avatar slot="start">
+            <ion-img src="assets/avatar/girldino.jpg"></ion-img>
+          </ion-avatar>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--Fin Saludo-->
+
+  <!--Contenido-->
+  <div>
+    <ion-card color="success">
+      <ion-card-header>
+        <ion-card-title>Cre-RoArt</ion-card-title>
+        <ion-card-subtitle>Pequeñitos pero preciosos</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Muchas gracias por unirte a esta comunidad.
+      </ion-card-content>
+    </ion-card>
+
+    <b><h4 style="margin-left: 7%" class="text">Presentamos Algunos Productos:</h4></b>
+    <ion-slides fullscreen class="ion-padding" scroll-y="false" pager>
+      <ion-slide>
+        <ion-card>
+          <ion-grid class="grid">
+            <ion-row>
+              <ion-col class="col">
+                <img class="imgcard" src="assets/img/creroart/arreglos.jpg"/>
+              </ion-col>
+              <ion-col class="col">
+                <ion-card-title class="card-title">Arreglos Florales</ion-card-title><br>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <ion-grid class="grid">
+            <ion-row>
+              <ion-col class="col">
+                <img class="imgcard" src="https://i.pinimg.com/736x/12/3a/59/123a5930133294d22c6d49953dcedd0a.jpg" />
+              </ion-col>
+              <ion-col class="col">
+                <ion-card-title class="card-title">Piñatas</ion-card-title><br>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-grid class="grid">
+            <ion-row>
+              <ion-col class="col">
+                <img class="imgcard" src="assets/img/creroart/fundas.jpg" />
+              </ion-col>
+              <ion-col class="col">
+                <ion-card-title class="card-title">Fundas</ion-card-title><br>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-grid class="grid">
+            <ion-row>
+              <ion-col class="col">
+                <img class="imgcard" src="assets/img/manzanas.jpg" />
+              </ion-col>
+              <ion-col class="col">
+                <ion-card-title class="card-title">Manzanas Locas</ion-card-title><br>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-tabs>
+      <ion-tab-bar color="dark" slot="bottom">
+
+        <ion-tab-button>
+          <ion-icon color="primary" name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button routerLink="/map" tab="map">
+          <ion-icon name="map"></ion-icon>
+          <ion-label>Map</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/marcas">
+          <ion-icon name="grid-outline"></ion-icon>
+          <ion-label>Productos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil" tab="speakers">
+          <ion-icon name="person-circle"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

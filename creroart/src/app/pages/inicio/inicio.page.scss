@@ -1,6 +1,21 @@
 .titulo{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+ion-grid{
+    display: block;
+    align-items: center;
+    margin-top: 50px;
+}
+
+ion-img{
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 .divider {
@@ -42,8 +57,4 @@
     display: block;
     text-align: center;
     padding-bottom: 10px;
-}
-
-ion-grid{
-    margin-top: 50%;
 }

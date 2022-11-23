@@ -8,8 +8,8 @@
 					<label for="chk" aria-hidden="true">Sign up</label>
 
 					<input type="text" name="user" placeholder="User name" required>
-					<input type="email" formControlName="email" placeholder="Email" required>
-          <input class="pas" type="password" formControlName="password" placeholder="Password" required/>
+					<input type="email" name="email" formControlName="email" placeholder="Email" required>
+          			<input type="password" name="password" minlength="11" class="pas" formControlName="password" placeholder="Password" required/>
 					<button fill="clear" type="submit">Sign up</button>
 				</form>
 			</div>
@@ -20,7 +20,7 @@
 					<input type="email" formControlName="email" placeholder="Email" required="">
 					<input type="password" formControlName="password" placeholder="Password" required="">
 					<button type="submit" value="Login">Login</button>
-          <button class="lwgoogle" (click)="onClick()">Login With Google</button>
+          			<button class="lwgoogle" (click)="onClick()">Login With Google</button>
 				</form>
 			</div>
 	</div>

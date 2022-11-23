@@ -1,0 +1,76 @@
+
+.item{
+    margin-top: 10%;
+    float: right;
+}
+
+ion-avatar{
+   width: 70px;
+   height: 70px;
+}
+
+
+ion-tab-bar{
+    border: none;
+}
+
+h1{
+    text-align: left;
+    margin-left: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:200%;
+}
+
+h3{
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 8%;
+    font-family:monospace;
+}
+
+h4{
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 8%;
+    font-size:15px;
+    font-family:Verdana;
+}
+
+.contenido{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.imgcard{
+    width: 250px;
+    height: 200px;
+}
+
+ion-searchbar{
+    margin-top: 10%;
+}
+
+ion-toolbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border-radius: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}

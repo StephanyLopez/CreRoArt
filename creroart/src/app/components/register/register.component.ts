@@ -20,7 +20,7 @@ export class RegisterComponent implements OnInit {
   ) {
     this.formReg = new FormGroup({
       email: new FormControl(),
-      password: new FormControl()
+      password: new FormControl(),
     }),
     this.formLogin = new FormGroup({
       email: new FormControl(),

@@ -1,0 +1,39 @@
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="warning"><ion-icon name="warning"></ion-icon>PROXIMAMENTE ESTARÁ HABILITADO</ion-card-title>
+      <ion-card-subtitle>Gracias por visitarnos</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-no-border" color="dark">
+    <ion-tabs class="ion-no-border">
+      <ion-tab-bar color="dark" slot="bottom">
+
+        <ion-tab-button routerLink="/bien">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button tab="map">
+          <ion-icon color="primary" name="map"></ion-icon>
+          <ion-label>Map</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/marcas">
+          <ion-icon name="grid-outline"></ion-icon>
+          <ion-label>Productos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil" tab="speakers">
+          <ion-icon name="person-circle"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
