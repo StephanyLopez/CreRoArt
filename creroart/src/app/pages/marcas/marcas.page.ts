@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./marcas.page.scss'],
 })
 export class MarcasPage implements OnInit {
-  segment = 'second';
+  segment = 'creroart';
   constructor() { }
   ngOnInit() {
   }

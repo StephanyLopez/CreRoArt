@@ -21,7 +21,30 @@
         Arreglos Florales
       </ion-card-header>
       <ion-card-content>
-        First Content here
+        <ion-button id="open-modal" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/creroart/arreglos.jpg"></ion-img>
+                  <br><p class="titp">Arreglos Florales</p>
+                  <p>Preparamos un detallito especial para la persona de su corazón!👩‍👧‍👦❤️
+                    Te ofrecemos calidad, excelente servicio y nos acoplamos a tu presupuesto....
+                  </p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -31,7 +54,28 @@
         Cuadros
       </ion-card-header>
       <ion-card-content>
-        First Content here
+        <ion-button id="cuadros" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="cuadros" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/creroart/cuadros.jpg"></ion-img>
+                  <br><p class="titp">Cuadros</p>
+                  <p>Un regalito maravilloso para sorprender a esa personita especial!❤️🦖</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -41,7 +85,29 @@
         Dulceros & CajaSorpresa
       </ion-card-header>
       <ion-card-content>
-        First Content here
+        <ion-button id="dulceros" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="dulceros" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/creroart/dulceros.jpg"></ion-img>
+                  <br><p class="titp">Dulceros & CajaSorpresa</p>
+                  <p>Que esperas para sorprender a tu personita especial!❤️✨
+                    Cre-RoArt listo para hacer sus sueños realidad y pintar una sonrisa en su rostro 🦖</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -51,7 +117,28 @@
         Fundas
       </ion-card-header>
       <ion-card-content>
-        First Content here
+        <ion-button id="fundas" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="fundas" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/creroart/fundas.jpg"></ion-img>
+                  <br><p class="titp">Fundas</p>
+                  <p>Fundas Personalizadas y hechas con todo nuestro amor para sorprender a esa personita especial!🦖❤️</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -61,17 +148,28 @@
         Piñatas
       </ion-card-header>
       <ion-card-content>
-        First Content here
-      </ion-card-content>
-    </ion-card>
-
-    <!--Primera Parte-->
-    <ion-card *ngSwitchCase="'second'">
-      <ion-card-header>
-        BIENVENIDO
-      </ion-card-header>
-      <ion-card-content>
-        Conoce Nuestras Marcas y Productos
+        <ion-button id="piñatas" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="piñatas" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/creroart/piñatas.jpg"></ion-img>
+                  <br><p class="titp">Piñatas</p>
+                  <p>Dala, dale, dale, no pierdas sentido... Una piñata a la orden!🪅🪅</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -82,7 +180,29 @@
         Tacos Locos
       </ion-card-header>
       <ion-card-content>
-        $45.00
+        <ion-button id="tacos" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="tacos" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/tacos.jpg"></ion-img>
+                  <br><p class="titp">Tacos Locos</p>
+                  <p>Quieres probar algo nuevo? Los taquitos locos son para ti, no te quedes sin probar los tuyos!
+                    No pueden decir que las botanas no son saludables 🌮🤪🦖</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -92,7 +212,28 @@
         Paleta Picamoy
       </ion-card-header>
       <ion-card-content>
-        Content here
+        <ion-button id="paleta" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="paleta" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/paleta.jpg"></ion-img>
+                  <br><p class="titp">Paleta Picamoy</p>
+                  <p>Paletas súper deliciosas y de sabores tradicionales! Eres amante de lo picosito? Está paletita es para ti🥭🍉🌽🦖                  </p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -102,7 +243,28 @@
         Gomitas Locas
       </ion-card-header>
       <ion-card-content>
-        $35.00
+        <ion-button id="gomitas" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="gomitas" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/gomitas.jpg"></ion-img>
+                  <br><p class="titp">Gomitas Locas</p>
+                  <p>No te quedes sin probar las tuyas!🍏</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -112,7 +274,28 @@
         Tostilocos
       </ion-card-header>
       <ion-card-content>
-        Content here
+        <ion-button id="tosti" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="tosti" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/tostilocos.jpg"></ion-img>
+                  <br><p class="titp">Tostilocos</p>
+                  <p>Unos deliciosos tostilocos para acompañar tu tarde y disfrutar al máximo!💚🦖🤪</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -122,7 +305,29 @@
         Manzana en Palo
       </ion-card-header>
       <ion-card-content>
-        Content here
+        <ion-button id="manzanapalo" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="manzanapalo" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/manzanapalo.jpg"></ion-img>
+                  <br><p class="titp">Manzana en Palo</p>
+                  <p>MANZANAS FORRADAS!🍏🦖
+                    Super jugosas y crujientes, lo mejor para quitar el antojo!🤤♥️</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -132,7 +337,28 @@
         Pepinos Locos
       </ion-card-header>
       <ion-card-content>
-        $40.00
+        <ion-button id="pepinos" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="pepinos" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/pepinoslocos.jpg"></ion-img>
+                  <br><p class="titp">Pepinos Locos</p>
+                  <p>Te gustan las botanas picositas y llenas de sabor! Que esperas para probar nuestros pepinos locos?🥒🤪🦖</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -142,7 +368,28 @@
         Manzana Loca
       </ion-card-header>
       <ion-card-content>
-        Content here
+        <ion-button id="manzloca" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="manzloca" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/manzanas.jpg"></ion-img>
+                  <br><p class="titp">Manzana Loca</p>
+                  <p>Aprovecha nuestras promociones y no te quedes sin disfrutar de nuestra deliciosas manzanas locas!!!!🍏🦖</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -152,17 +399,61 @@
         Mangos Locos
       </ion-card-header>
       <ion-card-content>
-        $80.00
+        <ion-button id="mangloco" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="mangloco" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/mangoloco.jpg"></ion-img>
+                  <br><p class="titp">Mangos Locos</p>
+                  <p>Algunos podrán decir que es canibalismo, pero que importa!🥭... Comer un delicioso mango cubierto con esa maravillosa pulpa de tamarindo, es algo que no te puedes perder!🥭🤪🦖</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
     <ion-card *ngSwitchCase="'applerex'">
       <ion-img src="assets/img/applerex/manzanacaramelo.jpg"></ion-img>
       <ion-card-header>
-        Manzana con Caranelo
+        Manzana con Caramelo
       </ion-card-header>
       <ion-card-content>
-        Content here
+        <ion-button id="manzcarml" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="manzcarml" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/manzanacaramelo.jpg"></ion-img>
+                  <br><p class="titp">Manzana con Caramelo</p>
+                  <p>🦖🍎"MANZANA CON CARAMELO"🍎🦖
+                    Que esperas para probar la nueva manzanita que traemos para ti, no te arrepentirás....
+                    Super ricas, crujientes y deliciosas!</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
 
@@ -172,7 +463,28 @@
         Pepinos Locos Supremos
       </ion-card-header>
       <ion-card-content>
-        $80.00
+        <ion-button id="peplocsup" color="success" expand="block">Conocer Más</ion-button>
+        <ion-modal trigger="peplocsup" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <div class="ion-margin-top">
+                <ion-label>
+                  <ion-img class="imgmodal" src="assets/img/applerex/pepisup.jpg"></ion-img>
+                  <br><p class="titp">Pepinos Locos Supremos</p>
+                  <p>Te gustan las botanas picositas y llenas de sabor! Que esperas para probar nuestros pepinos locos supremos?🥒🤪🦖</p>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-label>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </ion-card-content>
     </ion-card>
   </div>
@@ -197,11 +509,6 @@
         <ion-tab-button>
           <ion-icon color="primary" name="grid"></ion-icon>
           <ion-label>Productos</ion-label>
-        </ion-tab-button>
-
-        <ion-tab-button routerLink="/perfil" tab="speakers">
-          <ion-icon name="person-circle"></ion-icon>
-          <ion-label>Perfil</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>

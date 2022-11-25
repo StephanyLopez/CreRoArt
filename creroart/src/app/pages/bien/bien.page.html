@@ -4,7 +4,6 @@
     <ion-row class="ion-align-items-center">
       <ion-col>
         <b><h1>HOLA</h1></b>
-        <button (click)="onClick()" class="btn btn-outline-danger mt-5">Logout</button>
       </ion-col>
       <ion-col>
         <!--Item-->
@@ -12,6 +11,7 @@
           <ion-avatar slot="start">
             <ion-img src="assets/avatar/girldino.jpg"></ion-img>
           </ion-avatar>
+          <ion-button (click)="onClick()" class="btn btn-outline-danger mt-5">Logout</ion-button>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -93,6 +93,12 @@
         </ion-card>
       </ion-slide>
     </ion-slides>
+
+    <ion-card color="dark">
+      <ion-card-header>
+        <ion-card-subtitle>✨Les ofrecemos productos de calidad... Elaborados a mano y con mucho amor, asegurando un servicio lleno de experiencias con mucha alegria y cuidando de nuestro planeta ecológicamente✨</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
   </div>
 </ion-content>
 
@@ -114,11 +120,6 @@
         <ion-tab-button routerLink="/marcas">
           <ion-icon name="grid-outline"></ion-icon>
           <ion-label>Productos</ion-label>
-        </ion-tab-button>
-
-        <ion-tab-button routerLink="/perfil" tab="speakers">
-          <ion-icon name="person-circle"></ion-icon>
-          <ion-label>Perfil</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
