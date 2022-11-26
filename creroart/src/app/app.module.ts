@@ -17,7 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
-
+import {MapPageModule} from '../app/pages/map/map.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
+    MapPageModule,
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,

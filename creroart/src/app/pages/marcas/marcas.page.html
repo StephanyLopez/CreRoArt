@@ -15,154 +15,695 @@
 
   <!--Contenido que va a aparecer-->
   <div [ngSwitch]="segment">
-    <ion-card *ngSwitchCase="'creroart'">
+    <ion-card *ngSwitchCase="'creroart'" color="white">
       <ion-img src="assets/img/creroart/arreglos.jpg"></ion-img>
       <ion-card-header>
         Arreglos Florales
       </ion-card-header>
       <ion-card-content>
+        <p>Preparamos un detallito especial para la persona de su corazón!👩‍👧‍👦❤️
+          Te ofrecemos calidad, excelente servicio y nos acoplamos a tu presupuesto....
+        </p>
         <ion-button id="open-modal" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="open-modal" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
-              <div class="ion-margin-top">
-                <ion-label>
-                  <ion-img class="imgmodal" src="assets/img/creroart/arreglos.jpg"></ion-img>
-                  <br><p class="titp">Arreglos Florales</p>
-                  <p>Preparamos un detallito especial para la persona de su corazón!👩‍👧‍👦❤️
-                    Te ofrecemos calidad, excelente servicio y nos acoplamos a tu presupuesto....
-                  </p>
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
-                      <ion-col size="6" size-md="4" size-lg="2">
-                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </ion-label>
-              </div>
+              <ion-slides fullscreen class="ion-padding" scroll-y="false" pager>
+                <!--Ramillete De Sabor-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodala" src="assets/img/creroart/arreglos/ramillete.jpg"></ion-img>
+                      <br><p class="titp">Ramillete De Sabor</p><br>
+                      <b><p>Incluye:</p></b>
+                      <p>12 Rosas</p>
+                      <p>3 Sabritas</p>
+                      <p>Tarjeta</p><br>
+                      <p>Personalizado a tu gusto</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$350.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Amores Mío-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/arreglos/amores.jpg"></ion-img>
+                      <br><p class="titp">Amores Mío</p><br>
+                      <b><p>Incluye:</p></b>
+                      <p>12 Rosas</p>
+                      <p>Chocolates</p>
+                      <p>Tarjeta</p><br>
+                      <p>Rosas Rojas o Blancas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$450.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Corazón Chiquito-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/arreglos/corazónchiquito.jpg"></ion-img>
+                      <br><p class="titp">Corazón Chiquito</p><br>
+                      <b><p>Incluye:</p></b>
+                      <p>8 Rosas</p>
+                      <p>Chocolates</p>
+                      <p>Tarjeta</p><br>
+                      <p>Rosas Rojas o Blancas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$330.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Corazón Ferrero-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/arreglos/ferrero.jpg"></ion-img>
+                      <br><p class="titp">Corazón Ferrero</p><br>
+                      <b><p>Incluye:</p></b>
+                      <p>10 Rosas</p>
+                      <p>Chocolates</p>
+                      <p>Tarjeta</p><br>
+                      <p>Rosas Rojas o Blancas</p>
+                      <p>Cajita Color Favorito</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$580.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Maravilloso Encuentro-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/arreglos/maravilloso.jpg"></ion-img>
+                      <br><p class="titp">Corazón Chiquito</p><br>
+                      <b><p>Incluye:</p></b>
+                      <p>4 Rosas</p>
+                      <p>Chocolates</p>
+                      <p>Tarjeta</p><br>
+                      <p>Rosas Rojas o Blancas</p>
+                      <p>Cajita De Color Favorito</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$230.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Choco Lindo-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/arreglos/chocolindo.jpg"></ion-img>
+                      <br><p class="titp">Choco Lindo</p><br>
+                      <b><p>Incluye:</p></b>
+                      <p>12 Rosas</p>
+                      <p>Chocolates</p>
+                      <p>Tarjeta</p><br>
+                      <p>Rosas Rojas o Blancas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$420.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Corazón Kinder Chocolate-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/arreglos/kinder.jpg"></ion-img>
+                      <br><p class="titp">Corazón Kinder Chocolate</p><br>
+                      <b><p>Incluye:</p></b>
+                      <p>5 Rosas</p>
+                      <p>Kinder Delice</p>
+                      <p>Kinder Sorpresa</p>
+                      <p>Tarjeta</p><br>
+                      <p>Rosas Rojas o Blancas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$640.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+              </ion-slides>    
+              
             </ion-content>
           </ng-template>
         </ion-modal>
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'creroart'">
+    <ion-card *ngSwitchCase="'creroart'" color="white">
       <ion-img src="assets/img/creroart/cuadros.jpg"></ion-img>
       <ion-card-header>
         Cuadros
       </ion-card-header>
       <ion-card-content>
+        <p>Un regalito maravilloso para sorprender a esa personita especial!❤️🦖</p>
         <ion-button id="cuadros" color="success" expand="block">Conocer Más</ion-button>
         <ion-modal trigger="cuadros" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
-              <div class="ion-margin-top">
-                <ion-label>
-                  <ion-img class="imgmodal" src="assets/img/creroart/cuadros.jpg"></ion-img>
-                  <br><p class="titp">Cuadros</p>
-                  <p>Un regalito maravilloso para sorprender a esa personita especial!❤️🦖</p>
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
-                      <ion-col size="6" size-md="4" size-lg="2">
-                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </ion-label>
-              </div>
+              <ion-slides fullscreen class="ion-padding" scroll-y="false" pager>
+                <!--Cuadro 1-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/cuadros.jpg"></ion-img>
+                      <br><p class="titp">Cuadros</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cuadro 2-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/cuadros/pareja1.jpg"></ion-img>
+                      <br><p class="titp">Cuadros</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cuadro 3-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/cuadros/pareja2.jpg"></ion-img>
+                      <br><p class="titp">Cuadros</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cuadro 4-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/cuadros/pareja3.jpg"></ion-img>
+                      <br><p class="titp">Cuadros</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cuadro 5-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/cuadros/dibujos.jpg"></ion-img>
+                      <br><p class="titp">Cuadros</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cuadro 6-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/cuadros/chicas.jpg"></ion-img>
+                      <br><p class="titp">Cuadros</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+              </ion-slides>
+
             </ion-content>
           </ng-template>
         </ion-modal>
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'creroart'">
+    <ion-card *ngSwitchCase="'creroart'" color="white">
       <ion-img src="assets/img/creroart/dulceros.jpg"></ion-img>
       <ion-card-header>
         Dulceros & CajaSorpresa
       </ion-card-header>
       <ion-card-content>
+        <p>Que esperas para sorprender a tu personita especial!❤️✨
+          Cre-RoArt listo para hacer sus sueños realidad y pintar una sonrisa en su rostro 🦖</p>
         <ion-button id="dulceros" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="dulceros" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="dulceros" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
-              <div class="ion-margin-top">
-                <ion-label>
-                  <ion-img class="imgmodal" src="assets/img/creroart/dulceros.jpg"></ion-img>
-                  <br><p class="titp">Dulceros & CajaSorpresa</p>
-                  <p>Que esperas para sorprender a tu personita especial!❤️✨
-                    Cre-RoArt listo para hacer sus sueños realidad y pintar una sonrisa en su rostro 🦖</p>
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
-                      <ion-col size="6" size-md="4" size-lg="2">
-                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </ion-label>
-              </div>
+
+              <ion-slides fullscreen class="ion-padding" scroll-y="false" pager>
+                <!--Dulceros-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/dulceros/dulceros.jpg"></ion-img>
+                      <br><p class="titp">Dulceros</p><br>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Diseño:</p></b>
+                            <p>Personaje</p>
+                            <p>Simples</p>
+                          </ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Incluye:</p></b>
+                            <p>Dulces</p>
+                            <p>Tarjeta</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Mayoreo y Menudeo:</p></b>
+                            <p>Calidad y Buen Servicio</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Bouquet Golosinas-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/dulceros/golosinas.jpg"></ion-img>
+                      <br><p class="titp">Bouquet Golosinas</p><br>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Incluye:</p></b>
+                            <p>Galletas</p>
+                            <p>Sabritas</p>
+                            <p>Juguito</p>
+                            <p>Gomitas</p>
+                            <p>Chocolates</p>
+                            <p>Tarjeta Sorpresa</p>
+                          </ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Personaliza:</p></b>
+                            <p>Ramo o Canasta</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Medidas:</p></b>
+                            <p>25 x 35 x 10</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$300.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cajita Kinder Sorpresa-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/dulceros/kinder.jpg"></ion-img>
+                      <br><p class="titp">Cajita Kinder Sorpresa</p><br>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Incluye:</p></b>
+                            <p>Galletas</p>
+                            <p>Sabritas</p>
+                            <p>Juguito</p>
+                            <p>Gomitas</p>
+                            <p>Chocolates</p>
+                            <p>Tarjeta Sorpresa</p>
+                          </ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Personaliza:</p></b>
+                            <p>Niño o Niña</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Medidas:</p></b>
+                            <p>25 x 35 x 10</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$350.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cajita Unicornio Sorpresa-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/dulceros/unicornio.jpg"></ion-img>
+                      <br><p class="titp">Cajita Unicornio Sorpresa</p><br>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Incluye:</p></b>
+                            <p>Dulces</p>
+                            <p>Tarjeta</p>
+                          </ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Personaliza:</p></b>
+                            <p>Circular o Cuadrada</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$300.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cajita Among Us-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/dulceros/among.jpg"></ion-img>
+                      <br><p class="titp">Cajita Among Us</p><br>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Incluye:</p></b>
+                            <p>Galletas</p>
+                            <p>Sabritas</p>
+                            <p>Juguito</p>
+                            <p>Gomitas</p>
+                            <p>Chocolates</p>
+                            <p>Tarjeta Sorpresa</p>
+                          </ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Personaliza:</p></b>
+                            <p>Color o Accesorios</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Medidas:</p></b>
+                            <p>25 x 35 x 10</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$350.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cajita Letra-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/dulceros/letra.jpg"></ion-img>
+                      <br><p class="titp">Cajita Letra</p><br>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Incluye:</p></b>
+                            <p>Gomitas Favoritas</p>
+                            <p>Tarjeta</p>
+                          </ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Personaliza:</p></b>
+                            <p>Envoltura Personalizada</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$200.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <!--Cajita Among Us Sorpresa-->
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodal" src="assets/img/creroart/dulceros/sorpresaus.jpg"></ion-img>
+                      <br><p class="titp">Cajita Among Us Sorpresa</p><br>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Incluye:</p></b>
+                            <p>Dulces</p>
+                            <p>Tarjeta</p>
+                          </ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <b><p>Personaliza:</p></b>
+                            <p>Color Al Gusto</p>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">$200.00</ion-col>
+                          <ion-col size="6" size-md="4" size-lg="2">
+                            <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+              </ion-slides>
             </ion-content>
           </ng-template>
         </ion-modal>
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'creroart'">
+    <ion-card *ngSwitchCase="'creroart'" color="white">
       <ion-img src="assets/img/creroart/fundas.jpg"></ion-img>
       <ion-card-header>
         Fundas
       </ion-card-header>
       <ion-card-content>
+        <p>Fundas Personalizadas y hechas con todo nuestro amor para sorprender a esa personita especial!🦖❤️</p>
         <ion-button id="fundas" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="fundas" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="fundas" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
-              <div class="ion-margin-top">
-                <ion-label>
-                  <ion-img class="imgmodal" src="assets/img/creroart/fundas.jpg"></ion-img>
-                  <br><p class="titp">Fundas</p>
-                  <p>Fundas Personalizadas y hechas con todo nuestro amor para sorprender a esa personita especial!🦖❤️</p>
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
-                      <ion-col size="6" size-md="4" size-lg="2">
-                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </ion-label>
-              </div>
+              <ion-slides fullscreen class="ion-padding" scroll-y="false" pager>
+                
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodalf" src="assets/img/creroart/fundas/1.jpg"></ion-img>
+                      <br><p class="titp">Fundas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodalf" src="assets/img/creroart/fundas/2.jpg"></ion-img>
+                      <br><p class="titp">Fundas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodalf" src="assets/img/creroart/fundas/3.jpg"></ion-img>
+                      <br><p class="titp">Fundas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodalf" src="assets/img/creroart/fundas/4.jpg"></ion-img>
+                      <br><p class="titp">Fundas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodalf" src="assets/img/creroart/fundas/5.jpg"></ion-img>
+                      <br><p class="titp">Fundas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodalf" src="assets/img/creroart/fundas/6.jpg"></ion-img>
+                      <br><p class="titp">Fundas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+                <ion-slide>
+                  <div class="ion-margin-top">
+                    <ion-label>
+                      <ion-img class="imgmodalf" src="assets/img/creroart/fundas/7.jpg"></ion-img>
+                      <br><p class="titp">Fundas</p>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-label>
+                  </div>
+                </ion-slide>
+
+              </ion-slides>
             </ion-content>
           </ng-template>
         </ion-modal>
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'creroart'">
+    <ion-card *ngSwitchCase="'creroart'" color="white">
       <ion-img src="assets/img/creroart/piñatas.jpg"></ion-img>
       <ion-card-header>
         Piñatas
       </ion-card-header>
       <ion-card-content>
+        <p>Dala, dale, dale, no pierdas sentido... Una piñata a la orden!🪅🪅</p>
         <ion-button id="piñatas" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="piñatas" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="piñatas" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
-                  <ion-img class="imgmodal" src="assets/img/creroart/piñatas.jpg"></ion-img>
+                  <ion-img class="imgmodalf" src="assets/img/creroart/piñatas.jpg"></ion-img>
                   <br><p class="titp">Piñatas</p>
-                  <p>Dala, dale, dale, no pierdas sentido... Una piñata a la orden!🪅🪅</p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
-                      <ion-col size="6" size-md="4" size-lg="2">
-                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
-                      </ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">El precio varía del diseño</ion-col>
                     </ion-row>
                   </ion-grid>
                 </ion-label>
@@ -174,25 +715,37 @@
     </ion-card>
 
     <!--AppleRex-->
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/tacos.jpg"></ion-img>
       <ion-card-header>
         Tacos Locos
       </ion-card-header>
       <ion-card-content>
+        <p>Quieres probar algo nuevo? Los taquitos locos son para ti, no te quedes sin probar los tuyos!
+          No pueden decir que las botanas no son saludables 🌮🤪🦖</p>
         <ion-button id="tacos" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="tacos" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="tacos" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/tacos.jpg"></ion-img>
                   <br><p class="titp">Tacos Locos</p>
-                  <p>Quieres probar algo nuevo? Los taquitos locos son para ti, no te quedes sin probar los tuyos!
-                    No pueden decir que las botanas no son saludables 🌮🤪🦖</p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Incluye:</p></b>
+                        <p>Pepino</p>
+                        <p>Jicama</p>
+                        <p>Zanahoria</p>
+                        <p>Cacahuates</p>
+                      </ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Tortilla hecha con pulpa de tamarindo</p></b>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$45.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
                         <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
                       </ion-col>
@@ -206,24 +759,43 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/paleta.jpg"></ion-img>
       <ion-card-header>
         Paleta Picamoy
       </ion-card-header>
       <ion-card-content>
+        <p>Paletas súper deliciosas y de sabores tradicionales! Eres amante de lo picosito? Está paletita es para ti🥭🍉🌽🦖</p>
         <ion-button id="paleta" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="paleta" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="paleta" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/paleta.jpg"></ion-img>
                   <br><p class="titp">Paleta Picamoy</p>
-                  <p>Paletas súper deliciosas y de sabores tradicionales! Eres amante de lo picosito? Está paletita es para ti🥭🍉🌽🦖                  </p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Sabores:</p></b>
+                        <p>🥭Mango</p>
+                        <p>🍉Sandía</p>
+                        <p>🌽Elote</p>
+                      </ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Incluye:</p></b>
+                        <p>Panditas</p>
+                        <p>Gusanitos</p>
+                        <p>Rielitos</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Forrada con pulpa de tamarindo 100% natural polvo miguelito</p></b>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$25.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
                         <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
                       </ion-col>
@@ -237,24 +809,36 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/gomitas.jpg"></ion-img>
       <ion-card-header>
         Gomitas Locas
       </ion-card-header>
       <ion-card-content>
+        <p>No te quedes sin probar las tuyas!🍏</p>
         <ion-button id="gomitas" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="gomitas" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="gomitas" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/gomitas.jpg"></ion-img>
                   <br><p class="titp">Gomitas Locas</p>
-                  <p>No te quedes sin probar las tuyas!🍏</p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Incluye:</p></b>
+                        <p>Duraznitos</p>
+                        <p>Gusanitos</p>
+                        <p>Manguitos</p>
+                        <p>Panditas</p>
+                        <p>Pica Fresa</p>
+                        <p>Skwinkles</p>
+                        <p>Cacahuates</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$35.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
                         <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
                       </ion-col>
@@ -268,27 +852,53 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/tostilocos.jpg"></ion-img>
       <ion-card-header>
         Tostilocos
       </ion-card-header>
       <ion-card-content>
+        <p>Unos deliciosos tostilocos para acompañar tu tarde y disfrutar al máximo!💚🦖🤪</p>
         <ion-button id="tosti" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="tosti" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="tosti" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/tostilocos.jpg"></ion-img>
                   <br><p class="titp">Tostilocos</p>
-                  <p>Unos deliciosos tostilocos para acompañar tu tarde y disfrutar al máximo!💚🦖🤪</p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
-                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
+                        <b><p>Inlcuye:</p></b>
+                        <p>Pepino</p>
+                        <p>Jitomate</p>
+                        <p>Cebolla</p>
+                        <p>Cacahuates</p>
+                        <p>Forritos</p>
+                        <p>Salseados</p>
                       </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <b><p>Combo 1:</p></b>
+                        <p>Cueritos</p>
+                        <p>Salchicha</p>
+                        <p>Ceviche</p>
+                      </ion-col>
+                      <ion-col>
+                        <b><p>Combo 2:</p></b>
+                        <p>Combinados</p>
+                      </ion-col>
+                      <ion-col>
+                        <b><p>Combo 3:</p></b>
+                        <p>Camarón Seco</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col class="titp">$45.00</ion-col>
+                      <ion-col class="titp">$50 .00</ion-col>
+                      <ion-col class="titp">$65.00</ion-col>
                     </ion-row>
                   </ion-grid>
                 </ion-label>
@@ -299,23 +909,36 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/manzanapalo.jpg"></ion-img>
       <ion-card-header>
         Manzana en Palo
       </ion-card-header>
       <ion-card-content>
+        <p>MANZANAS FORRADAS!🍏🦖Super jugosas y crujientes, lo mejor para quitar el antojo!🤤♥️</p>
         <ion-button id="manzanapalo" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="manzanapalo" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="manzanapalo" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/manzanapalo.jpg"></ion-img>
                   <br><p class="titp">Manzana en Palo</p>
-                  <p>MANZANAS FORRADAS!🍏🦖
-                    Super jugosas y crujientes, lo mejor para quitar el antojo!🤤♥️</p>
                   <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Inlcuye:</p></b>
+                        <p>Manguitos</p>
+                        <p>Gusanitos</p>
+                        <p>Duraznitos</p>
+                        <p>Rielitos</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Forrada con pulpa de tamarindo 100% natural polvo miguelito</p></b>
+                      </ion-col>
+                    </ion-row>
                     <ion-row>
                       <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
@@ -331,22 +954,32 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/pepinoslocos.jpg"></ion-img>
       <ion-card-header>
         Pepinos Locos
       </ion-card-header>
       <ion-card-content>
+        <p>Te gustan las botanas picositas y llenas de sabor! Que esperas para probar nuestros pepinos locos?🥒🤪🦖</p>
         <ion-button id="pepinos" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="pepinos" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="pepinos" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/pepinoslocos.jpg"></ion-img>
                   <br><p class="titp">Pepinos Locos</p>
-                  <p>Te gustan las botanas picositas y llenas de sabor! Que esperas para probar nuestros pepinos locos?🥒🤪🦖</p>
                   <ion-grid>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Inlcuye:</p></b>
+                        <p>Pepinos Preparados</p>
+                        <p>Cueritos</p>
+                        <p>Pulparindo</p>
+                        <p>Cacahuates</p>
+                        <p>3 Toppings</p>
+                      </ion-col>
+                    </ion-row>
                     <ion-row>
                       <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
@@ -362,24 +995,41 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/manzanas.jpg"></ion-img>
       <ion-card-header>
         Manzana Loca
       </ion-card-header>
       <ion-card-content>
+        <p>Aprovecha nuestras promociones y no te quedes sin disfrutar de nuestra deliciosas manzanas locas!!!!🍏🦖</p>
         <ion-button id="manzloca" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="manzloca" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="manzloca" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/manzanas.jpg"></ion-img>
                   <br><p class="titp">Manzana Loca</p>
-                  <p>Aprovecha nuestras promociones y no te quedes sin disfrutar de nuestra deliciosas manzanas locas!!!!🍏🦖</p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Inlcuye:</p></b>
+                        <p>Pica Fresas</p>
+                        <p>Manguitos</p>
+                        <p>Skwinkles</p>
+                        <p>Gusanitos</p>
+                        <p>Duraznitos</p>
+                        <p>Cacahuates</p>
+                        <p>Panditas</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Forrada con pulpa de tamarindo 100% natural polvo miguelito</p></b>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$60.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
                         <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
                       </ion-col>
@@ -393,24 +1043,38 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/mangoloco.jpg"></ion-img>
       <ion-card-header>
         Mangos Locos
       </ion-card-header>
       <ion-card-content>
+        <p>Algunos podrán decir que es canibalismo, pero que importa!🥭... Comer un delicioso mango cubierto con esa maravillosa pulpa de tamarindo, es algo que no te puedes perder!🥭🤪🦖</p>
         <ion-button id="mangloco" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="mangloco" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="mangloco" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/mangoloco.jpg"></ion-img>
                   <br><p class="titp">Mangos Locos</p>
-                  <p>Algunos podrán decir que es canibalismo, pero que importa!🥭... Comer un delicioso mango cubierto con esa maravillosa pulpa de tamarindo, es algo que no te puedes perder!🥭🤪🦖</p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Inlcuye:</p></b>
+                        <p>Skwinkles</p>
+                        <p>Forritos</p>
+                        <p>Cacahuates</p>
+                        <p>3 Toppings</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Forrada con pulpa de tamarindo</p></b>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$80.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
                         <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
                       </ion-col>
@@ -424,57 +1088,48 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/manzanacaramelo.jpg"></ion-img>
       <ion-card-header>
         Manzana con Caramelo
       </ion-card-header>
       <ion-card-content>
-        <ion-button id="manzcarml" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="manzcarml" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
-          <ng-template>
-            <ion-content class="ion-padding">
-              <div class="ion-margin-top">
-                <ion-label>
-                  <ion-img class="imgmodal" src="assets/img/applerex/manzanacaramelo.jpg"></ion-img>
-                  <br><p class="titp">Manzana con Caramelo</p>
-                  <p>🦖🍎"MANZANA CON CARAMELO"🍎🦖
-                    Que esperas para probar la nueva manzanita que traemos para ti, no te arrepentirás....
-                    Super ricas, crujientes y deliciosas!</p>
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
-                      <ion-col size="6" size-md="4" size-lg="2">
-                        <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </ion-label>
-              </div>
-            </ion-content>
-          </ng-template>
-        </ion-modal>
+        <p>🦖🍎"MANZANA CON CARAMELO"🍎🦖
+          Que esperas para probar la nueva manzanita que traemos para ti, no te arrepentirás....
+          Super ricas, crujientes y deliciosas!</p>
       </ion-card-content>
     </ion-card>
 
-    <ion-card *ngSwitchCase="'applerex'">
+    <ion-card *ngSwitchCase="'applerex'" color="white">
       <ion-img src="assets/img/applerex/pepisup.jpg"></ion-img>
       <ion-card-header>
         Pepinos Locos Supremos
       </ion-card-header>
       <ion-card-content>
+        <p>Te gustan las botanas picositas y llenas de sabor! Que esperas para probar nuestros pepinos locos supremos?🥒🤪🦖</p>
         <ion-button id="peplocsup" color="success" expand="block">Conocer Más</ion-button>
-        <ion-modal trigger="peplocsup" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="cycle">
+        <ion-modal trigger="peplocsup" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.75, 0.95]" handleBehavior="cycle">
           <ng-template>
             <ion-content class="ion-padding">
               <div class="ion-margin-top">
                 <ion-label>
                   <ion-img class="imgmodal" src="assets/img/applerex/pepisup.jpg"></ion-img>
                   <br><p class="titp">Pepinos Locos Supremos</p>
-                  <p>Te gustan las botanas picositas y llenas de sabor! Que esperas para probar nuestros pepinos locos supremos?🥒🤪🦖</p>
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$40.00</ion-col>
+                      <ion-col size="6" size-md="4" size-lg="2">
+                        <b><p>Inlcuye:</p></b>
+                        <p>8 Pepinos</p>
+                        <p>Mango</p>
+                        <p>Jícama</p>
+                        <p>Cueritos</p>
+                        <p>Cacahuates</p>
+                        <p>Forritos</p>
+                        <p>3 Toppings</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" size-md="4" size-lg="2" class="titp">$80.00</ion-col>
                       <ion-col size="6" size-md="4" size-lg="2">
                         <ion-button color="dark"><ion-icon name="add-outline"></ion-icon>Add to Cart</ion-button>
                       </ion-col>

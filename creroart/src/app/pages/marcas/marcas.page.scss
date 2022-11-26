@@ -40,6 +40,10 @@ ion-segment{
   padding-bottom: 10px;
 }
 
+ion-card-header{
+  font-size: 20px;
+}
+
 ion-header{
   padding-top: 10px;
   width: 70%;
@@ -54,17 +58,31 @@ ion-img{
   margin-right: auto;
 }
 
+.imgmodala{
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .imgmodal{
-  width: 40%;
-  height: 40%;
+  width: 60%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgmodalf{
+  width: 70%;
+  height: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .titp{
+  text-align: center;
   font-size: medium;
   font-weight: bold;
-  color: black;
 }
 
 ion-col {

@@ -1,12 +1,13 @@
 export const environment = {
   firebaseConfig: {
-    apiKey: "AIzaSyBOBE1ii-JLKJ4aD2lwCF0GKp-vGnUxBXw",
-    authDomain: "roart-39985.firebaseapp.com",
-    databaseURL: "https://roart-39985-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "roart-39985",
-    storageBucket: "roart-39985.appspot.com",
-    messagingSenderId: "562662132409",
-    appId: "1:562662132409:web:3b9bea1de6e1deedd56968"
+    apiKey: "AIzaSyD28mwPsa2kg9MF_is3uq9GFvRsutOwSk0",
+    authDomain: "creroartofficial2022.firebaseapp.com",
+    databaseURL: "https://creroartofficial2022-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "creroartofficial2022",
+    storageBucket: "creroartofficial2022.appspot.com",
+    messagingSenderId: "185787412990",
+    appId: "1:185787412990:web:68bf327d2ba9699faf90af",
+    measurementId: "G-GZZKM4CBKT"
   },
   production: true
 };
